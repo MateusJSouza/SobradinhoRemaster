@@ -13,10 +13,6 @@
     flex-wrap: wrap;
 }
 
-.minhas-imagens {
-    width: 75%;
-}
-
 .img-fluid {
     max-width: 100%;
     height: auto;
