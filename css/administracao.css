@@ -1,0 +1,38 @@
+.container {
+    max-width: 100%;
+}
+
+.header {
+    background: #2c2c2c;
+}
+
+#list1 {
+    background: #2c2c2c;
+    border: #2c2c2c;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+
+ul li {
+    list-style: none;
+}
+
+#icon {
+    font-size: 50px;
+    color: #37c3b4;
+}
+
+footer {
+    background: #2c2c2c;
+    width: 100vw;
+}
+
+#iconFoo {
+    color: #6c6c6c;
+    font-size: 20px;
+}
