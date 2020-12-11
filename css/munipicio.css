@@ -1,29 +1,5 @@
 .container {
-    width: 100vw;
-    height: 100vh;
-    display: block;
-    margin: auto;
-    justify-content: center;
-    align-items: center
-}
-
-.pergunta{
-    margin-right: 1050px;
-}
-
-.redessocias{
-    margin-left: 1050px;
-    margin-bottom: 5px;
-    margin-top: 1%;
-}
-
-.email{
-    margin-right: 1000px;
-}
-
-.telefone{
-    margin-inline-end: 1100px;
-
+    max-width: 100%;
 }
 
 .header {
@@ -59,10 +35,4 @@ footer {
 #iconFoo {
     color: #6c6c6c;
     font-size: 20px;
-}
-
-.redesocial{
-    margin-left: 1050px;
-    margin-bottom: 5px;
-    margin-top: 1%;
 }
