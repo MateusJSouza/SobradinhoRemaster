@@ -3,7 +3,19 @@
 }
 
 .header {
-    background: #2c2c2c;
+    background: #313132;
+}
+
+.footer {
+    background: #313132;
+}
+
+.content {
+    width: 80vw;
+    display: block;
+    margin: auto;
+    justify-content: center;
+    align-items: center
 }
 
 #list1 {
@@ -25,11 +37,6 @@ ul li {
 #icon {
     font-size: 50px;
     color: #37c3b4;
-}
-
-footer {
-    background: #2c2c2c;
-    width: 100vw;
 }
 
 #iconFoo {
