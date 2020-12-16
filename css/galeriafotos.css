@@ -10,6 +10,20 @@
     background: #313132;
 }
 
+:root{
+    --cor-principal: blue;
+    --cor-secundaria: green;
+}
+nav ol li a{
+    color: var(--cor-principal);
+
+}
+
+nav ol li a{
+    color: var(--cor-secundaria);
+    text-decoration-color: underline;
+}
+
 .content {
     width: 80vw;
     display: block;

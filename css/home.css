@@ -18,6 +18,20 @@
     background: #313132;
 }
 
+:root{
+    --cor-principal: blue;
+    --cor-secundaria: green;
+}
+nav ol li a{
+    color: var(--cor-principal);
+
+}
+
+nav ol li a{
+    color: var(--cor-secundaria);
+    text-decoration-color: underline;
+}
+
 #list1 {
     background: #2c2c2c;
     border: #2c2c2c;
