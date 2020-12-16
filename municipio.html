@@ -7,12 +7,25 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
     <link rel="shortcut icon" href="assets/BrasãoSobradinhoRS.png" type="image/x-icon">
     <link rel="stylesheet" href="css/munipicio.css">
+    <link rel="stylesheet" href="css/contrast.css">
     <title>PREFEITURA MUNICIPAL - Município</title>
 </head>
 <body>
     <div class="container">
 
-      <div class="content">
+      <div class="row footer">
+        <div class="acessibilidade">
+          <ul class="nav justify-content-evenly">
+            <li class="nav-item"><a href="#" class="nav-link text-white">Acessibilidade</a></li>
+            <li class="nav-item"><a href="#" class="nav-link text-white" accesskey="1">[1] Mapa do site</a></li>
+            <li class="nav-item"><a href="#" class="nav-link text-white" accesskey="2">[2] Ir para conteúdo</a></li>
+            <li onclick="pesquisa('caixaPesquisa')" class="nav-item"><a href="#pesquisa" class="nav-link text-white" accesskey="3">[3] Ir para pesquisa</a></li>
+            <li class="nav-item"><a href="#altocontraste" id="altocontraste" class="nav-link text-white" accesskey="4" onclick="window.toggleContrast()" onkeydown="window.toggleContrast()">[4] Alto Contraste</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="content" id="content">
 
         <img src="http://sobradinho.rs.gov.br/portal/wp-content/uploads/2018/10/logo.png" class="img-fluid" alt="Logo Sobradinho">
 
@@ -56,7 +69,14 @@
           </div>
         </nav>
 
-        <div class="bread">
+        <div style="display: none" class="mt-2" id="caixaPesquisa">
+          <form class="d-flex w-50 mx-auto">
+            <input class="form-control rounded-pill" id="pesquisa" type="text" placeholder="Faça sua busca..." aria-label="Search">
+            <button id="pesquisa" class="btn btn-primary rounded-pill" type="button">Buscar</button>
+          </form>
+        </div>
+
+        <div class="bread mt-2">
           <nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='currentColor'/%3E%3C/svg%3E&#34;);" aria-label="breadcrumb">
             <ol class="breadcrumb">
               <li class="breadcrumb-item"><a href="home.html">Home</a></li>
@@ -74,14 +94,15 @@
                 <h3>Informações Gerais</h3>
 
                 <ul class="list-group list-group-flush">
-                    <li class="list-group-item">Nome do Município: Sobradinho</li>
-                    <li class="list-group-item">Associação: AMCSERRA</li>
-                    <li class="list-group-item">Prefeito: Luiz Affonso Trevisan, Partido: PMDB</li>
-                    <li class="list-group-item">Vice-Prefeito: Armando Mayerhofer, Partido: PMDB</li>
-                    <li class="list-group-item">Endereço da Prefeitura: Rua General Osório, 200 - Centro, CEP: 96900-000</li>
-                    <li class="list-group-item">E-mail: administracao@sobradinho-rs.com.br/
+                    <li class="list-group-item"><strong>Nome do Município:</strong> Sobradinho</li>
+                    <li class="list-group-item"><strong>Associação:</strong> AMCSERRA</li>
+                    <li class="list-group-item"><strong>Prefeito:</strong> Luiz Affonso Trevisan, Partido: PMDB</li>
+                    <li class="list-group-item"><strong>Vice-Prefeito:</strong> Armando Mayerhofer, Partido: PMDB</li>
+                    <li class="list-group-item"><strong>Endereço da Prefeitura:</strong> Rua General Osório, 200 - Centro, CEP: 96900-000</li>
+                    <li class="list-group-item"><strong>E-mail:</strong> administracao@sobradinho-rs.com.br/
                         assessoria@sobradinho-rs.com.br
-                        financas@sobradinho-rs.com.brCPNJ: 87592861000194</li>
+                        financas@sobradinho-rs.com.br<br>
+                        <strong>CPNJ:</strong> 87592861000194</li>
                   </ul>
 
                 <h3>Informações Populacionais</h3>
@@ -150,5 +171,6 @@
               </p>
         </div>
     </div>
+    <script src="./js/index.js"></script>
 </body>
 </html>
