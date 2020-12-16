@@ -71,7 +71,10 @@ function scrollToIdOnClick(event) {
     window.scroll(0, to);
 }
 
-var elemento = $(".acessibilidade");
+
+function fonte(e) {
+
+    var elemento = $(".acessibilidade");
     var fonte = parseInt(elemento.css('font-size'));
 
     var body = $("body");
@@ -86,3 +89,4 @@ var elemento = $(".acessibilidade");
     }
 
     elemento.css("fontSize", fonte);
+}
