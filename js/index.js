@@ -63,10 +63,26 @@ menuItems.forEach(item => {
 })
 
 function scrollToIdOnClick(event) {
-    event.preventDefault();
+    // event.preventDefault();
     const element = event.target;
-    const id = element.getAttribute('href');
+    const id = element.getAttribute('#navcontent');
     const to = document.querySelector('#content').offsetTop;
 
     window.scroll(0, to);
 }
+
+var elemento = $(".acessibilidade");
+    var fonte = parseInt(elemento.css('font-size'));
+
+    var body = $("body");
+    const fonteNormal = parseInt(body.css('font-size'));
+
+
+    if (e == 'a') {
+        fonte++;
+    }
+    if (e == 'd'){
+        fonte--;
+    }
+
+    elemento.css("fontSize", fonte);
